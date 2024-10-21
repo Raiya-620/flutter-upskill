@@ -1,5 +1,5 @@
 void main() {
-  Map<String, String> fruits = Map();
+  Map<String, String> fruits = Map(); // syntax for creating an empty map
   fruits['apple'] = 'red';
   fruits['orange'] = 'orange';
 
