@@ -1,5 +1,5 @@
+import 'package:fintech_app/components/button.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class TopScaffold extends StatelessWidget {
   const TopScaffold({super.key});
@@ -10,7 +10,9 @@ class TopScaffold extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(
+            16.0,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -29,11 +31,15 @@ class TopScaffold extends StatelessWidget {
                     children: [
                       Text(
                         'Good evening, ',
-                        style: TextStyle(fontSize: 22.0),
+                        style: TextStyle(
+                          fontSize: 22.0,
+                        ),
                       ),
                       Text(
                         'Zain',
-                        style: TextStyle(fontSize: 22.0),
+                        style: TextStyle(
+                          fontSize: 22.0,
+                        ),
                       )
                     ],
                   ),
@@ -41,7 +47,9 @@ class TopScaffold extends StatelessWidget {
               ),
               const Row(
                 children: [
-                  Text('April 20 - 2024'),
+                  Text(
+                    'April 20 - 2024',
+                  ),
                   Icon(
                     Icons.notifications_rounded,
                     color: Colors.grey,
@@ -52,38 +60,39 @@ class TopScaffold extends StatelessWidget {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.0),
+          padding: EdgeInsets.symmetric(
+            horizontal: 16.0,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Total Money you have'),
+              Text(
+                'Total Money you have',
+              ),
               Text(
                 '\$8.05',
-                style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: const Row(
-                children: [Icon(Icons.add), Text('Add')],
-              ),
+            Button(
+              Icons.add,
+              'Add',
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Row(
-                children: [Icon(Icons.call_made), Text('Send')],
-              ),
+            Button(
+              Icons.call_made,
+              'Send',
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Row(
-                children: [Icon(Icons.currency_exchange), Text('Exchange')],
-              ),
+            Button(
+              Icons.currency_exchange,
+              'Exchange',
             ),
           ],
         )

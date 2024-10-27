@@ -1,7 +1,7 @@
-import 'package:fintech_app/navigations.dart';
-import 'package:fintech_app/screen/bottom-scaffold.dart';
-import 'package:fintech_app/screen/middle-scaffold-body.dart';
-import 'package:fintech_app/screen/top-scaffold.dart';
+import 'package:fintech_app/components/navigations.dart';
+import 'package:fintech_app/components/bottom-scaffold.dart';
+import 'package:fintech_app/components/middle-scaffold-body.dart';
+import 'package:fintech_app/components/top-scaffold.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {

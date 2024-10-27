@@ -25,7 +25,9 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: Color(0xEFEFEFEF),
+      backgroundColor: const Color(
+        0xEFEFEFEF,
+      ),
       type: BottomNavigationBarType.fixed,
       currentIndex: selectedIndex,
       selectedItemColor: Colors.black,
@@ -33,25 +35,29 @@ class _BottomNavState extends State<BottomNav> {
       unselectedItemColor: Colors.grey,
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ),
-            label: 'Home'),
+          icon: Icon(
+            Icons.home,
+          ),
+          label: 'Home',
+        ),
         BottomNavigationBarItem(
-            icon: Icon(
-              Icons.local_activity_sharp,
-            ),
-            label: 'Activities'),
+          icon: Icon(
+            Icons.local_activity_sharp,
+          ),
+          label: 'Activities',
+        ),
         BottomNavigationBarItem(
-            icon: Icon(
-              Iconsax.card,
-            ),
-            label: 'Cards'),
+          icon: Icon(
+            Iconsax.card,
+          ),
+          label: 'Cards',
+        ),
         BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline,
-            ),
-            label: 'Profile'),
+          icon: Icon(
+            Icons.person_outline,
+          ),
+          label: 'Profile',
+        ),
       ],
     );
   }

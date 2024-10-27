@@ -1,5 +1,4 @@
 import 'package:fintech_app/screen/main-body-screen.dart';
-import 'package:fintech_app/screen/top-scaffold.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +15,9 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xEFEFEFEF),
+        backgroundColor: Color(
+          0xEFEFEFEF,
+        ),
         body: Body(),
       ),
     );

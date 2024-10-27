@@ -9,9 +9,7 @@ Map<String, int> newMap(Map<String, int> map) {
   });
   Iterable<String> newKeys = map.keys;
   Iterable<int> newValues = map.values;
-  for (int item in newValues) {
-    if (newValues.contains(item)) {}
-  }
+
   List<String> listNames = newKeys.toList();
   Map<int, String> newMap = Map.fromIterables(newValues, listNames);
 
