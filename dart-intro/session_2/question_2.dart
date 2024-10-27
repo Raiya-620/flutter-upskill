@@ -5,11 +5,16 @@
 // it should be added with the specified quantity.
 
 void main() {
-  print(ItemAndQuantity('bananas', 100));
+  print(
+    ItemAndQuantity('ban', 100),
+  );
 }
 
 String ItemAndQuantity(String item, int quantity) {
-  Map<String, int> inventory = {'apples': 5, 'bananas': 10};
+  Map<String, int> inventory = {
+    'apples': 5,
+    'bananas': 10,
+  };
   if (inventory.containsKey(item)) {
     print(inventory[item]! + quantity);
   } else {
