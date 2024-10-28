@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "fintech_app",
+            "cwd": "fintech_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "fintech_app (profile mode)",
+            "cwd": "fintech_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "fintech_app (release mode)",
+            "cwd": "fintech_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_widgets",
+            "cwd": "flutter_widgets",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_widgets (profile mode)",
+            "cwd": "flutter_widgets",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_widgets (release mode)",
+            "cwd": "flutter_widgets",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_intro",
+            "cwd": "flutter-intro\\flutter_intro",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_intro (profile mode)",
+            "cwd": "flutter-intro\\flutter_intro",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_intro (release mode)",
+            "cwd": "flutter-intro\\flutter_intro",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

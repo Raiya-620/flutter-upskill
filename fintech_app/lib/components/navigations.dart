@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class BottomNav extends StatefulWidget {
-  const BottomNav({super.key});
+  final PageController controller;
+  const BottomNav(this.controller, {super.key});
 
   @override
   State<BottomNav> createState() => _BottomNavState();
@@ -20,6 +21,11 @@ class _BottomNavState extends State<BottomNav> {
 
   void onItemTapped(int index) {
     selectedIndex = index;
+    widget.controller.animateToPage(
+      index,
+      duration: Duration(milliseconds: 800),
+      curve: Curves.easeInOut,
+    );
   }
 
   @override

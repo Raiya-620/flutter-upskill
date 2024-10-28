@@ -17,6 +17,7 @@ class TopScaffold extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
                     'asset/images/icon.png',

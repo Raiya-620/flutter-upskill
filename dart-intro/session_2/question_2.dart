@@ -6,7 +6,7 @@
 
 void main() {
   print(
-    ItemAndQuantity('ban', 100),
+    ItemAndQuantity('bananas', 100),
   );
 }
 

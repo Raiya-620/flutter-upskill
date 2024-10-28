@@ -5,23 +5,34 @@ import 'package:fintech_app/components/top-scaffold.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
-  const Body({super.key});
+  final _controller = PageController();
+  Body({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Padding(
-        padding: EdgeInsets.only(top: 25.0),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              TopScaffold(),
-              MiddlePortion(),
-              BottomCard(),
-              BottomNav(),
-            ],
+    return Scaffold(
+      backgroundColor: const Color(
+        0xEFEFEFEF,
+      ),
+      bottomNavigationBar: BottomNav(_controller),
+      body: PageView(
+        controller: _controller,
+        children: const [
+          SafeArea(
+            child: Padding(
+              padding: EdgeInsets.only(top: 25.0),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    TopScaffold(),
+                    MiddlePortion(),
+                    BottomCard(),
+                  ],
+                ),
+              ),
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
