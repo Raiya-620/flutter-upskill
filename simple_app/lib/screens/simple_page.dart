@@ -16,7 +16,7 @@ class _SimplePageState extends State<SimplePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Your name is: $name'),
+          Text('Your name is: ${widget.name}'),
           const SizedBox(
             height: 14,
           ),

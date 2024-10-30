@@ -20,10 +20,12 @@ class _BottomNavState extends State<BottomNav> {
   ];
 
   void onItemTapped(int index) {
-    selectedIndex = index;
+    setState(() {
+      selectedIndex = index;
+    });
     widget.controller.animateToPage(
       index,
-      duration: Duration(milliseconds: 800),
+      duration: const Duration(milliseconds: 800),
       curve: Curves.easeInOut,
     );
   }

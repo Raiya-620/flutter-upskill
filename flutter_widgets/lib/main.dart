@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/wigets/container_sizedbox.dart';
-import 'package:flutter_widgets/wigets/pageview.dart';
-import 'package:flutter_widgets/wigets/rows_columns.dart';
+import 'package:flutter_widgets/wigets/drawer.dart';
+import 'package:flutter_widgets/wigets/image.dart';
 
 void main() {
   runApp(
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primaryColor: Colors.purple,
       ),
-      home: PageViewWidget(),
+      home: ImageWidget(),
     );
   }
 }

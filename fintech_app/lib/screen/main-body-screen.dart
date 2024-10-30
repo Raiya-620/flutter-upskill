@@ -32,6 +32,15 @@ class Body extends StatelessWidget {
               ),
             ),
           ),
+          Center(
+            child: Text('activities page'),
+          ),
+          Center(
+            child: Text('cards page'),
+          ),
+          Center(
+            child: Text('profile page'),
+          ),
         ],
       ),
     );
