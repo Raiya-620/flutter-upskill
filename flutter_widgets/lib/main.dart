@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/wigets/drawer.dart';
-import 'package:flutter_widgets/wigets/image.dart';
+
+import 'package:flutter_widgets/wigets/bottom_nav.dart';
 
 void main() {
   runApp(
@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.purple,
+        brightness: Brightness.light,
+        primaryColor: Colors.green,
       ),
-      home: ImageWidget(),
+      home: BottomNav(),
     );
   }
 }

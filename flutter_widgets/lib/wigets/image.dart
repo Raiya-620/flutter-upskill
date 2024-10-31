@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class ImageWidget extends StatelessWidget {
@@ -8,27 +9,23 @@ class ImageWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
-        title: Text('Image Widget'),
+        title: const Text(
+          'Image Widget',
+        ),
       ),
       body: Center(
         child: Container(
-          height: 300,
-          width: 250,
-          decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                  blurRadius: 10.0,
-                  spreadRadius: 5.0,
-                  color: Colors.grey.shade800)
-            ],
-            image: DecorationImage(
-              image: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqlW5qSxZUmGuvKQvpeO4U4FM-eSyv-85Aqw&s',
-              ),
-              fit: BoxFit.cover,
-            ),
-            color: Colors.red,
-            borderRadius: BorderRadius.circular(20),
+          height: 200,
+          width: 300,
+          child: CachedNetworkImage(
+            imageUrl:
+                'https://www.partysuppliesindia.com/cdn/shop/products/A2_33_c020ee18-0c82-4dc1-b16d-c90a64707b20.jpg?v=1635508143&width=1500',
+            placeholder: (context, url) {
+              return Center(child: CircularProgressIndicator());
+            },
+            errorWidget: (context, url, error) {
+              return Icon(Icons.error);
+            },
           ),
         ),
       ),
