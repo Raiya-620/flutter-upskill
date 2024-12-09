@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_widgets/wigets/bottom_nav.dart';
+import 'package:flutter_widgets/wigets/drop_down_list.dart';
 
 void main() {
   runApp(
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.green,
       ),
-      home: BottomNav(),
+      home: const DropDownWidget(),
     );
   }
 }
