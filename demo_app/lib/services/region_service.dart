@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:demo_app/entities/api_response.dart';
 import 'package:http/http.dart' as http;
 
-import '../utilities/env.dart';
+// import '../utilities/env.dart';
 
 class RegionService {
   final http.Client client;
@@ -16,7 +16,7 @@ class RegionService {
     final response = await client.get(
       Uri.parse(url),
       headers: {
-        "X-Rapidapi-Key": apiKey,
+        // "X-Rapidapi-Key": apiKey,
       },
     );
 

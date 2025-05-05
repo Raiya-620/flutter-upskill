@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:demo_app/entities/api_response.dart';
 import 'package:http/http.dart' as http;
 
-import '../utilities/env.dart';
+// import '../utilities/env.dart';
 
 class CityService {
   final http.Client client;
@@ -17,7 +17,7 @@ class CityService {
       Uri.parse(
         url,
       ),
-      headers: {"X-Rapidapi-Key": apiKey},
+      // headers: {"X-Rapidapi-Key": apiKey},
     );
 
     if (response.statusCode == 200) {

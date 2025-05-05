@@ -1,7 +1,7 @@
 import "dart:convert";
 import "package:http/http.dart" as http;
 import "../entities/api_response.dart";
-import "../utilities/env.dart";
+// import "../utilities/env.dart";
 
 class CountryService {
   final http.Client client;
@@ -12,7 +12,7 @@ class CountryService {
   Future<ApiResponse> get() async {
     final response = await client.get(
       Uri.parse(url),
-      headers: {"X-Rapidapi-Key": apiKey},
+      // headers: {"X-Rapidapi-Key": apiKey},
     );
 
     if (response.statusCode == 200) {
