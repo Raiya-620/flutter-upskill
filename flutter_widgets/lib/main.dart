@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_widgets/wigets/stack.dart';
+
+import 'package:flutter_widgets/widgets/tab_bar.dart';
 
 
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.green,
       ),
-      home:  const StackWidget(),
+      home:  const TabBarWidget(),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/wigets/alert_dialog_box.dart';
-import 'package:flutter_widgets/wigets/dismissible.dart';
-import 'package:flutter_widgets/wigets/rows_columns.dart';
-import 'package:flutter_widgets/wigets/snackbar.dart';
+import 'package:flutter_widgets/widgets/alert_dialog_box.dart';
+import 'package:flutter_widgets/widgets/dismissible.dart';
+import 'package:flutter_widgets/widgets/rows_columns.dart';
+import 'package:flutter_widgets/widgets/snackbar.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
