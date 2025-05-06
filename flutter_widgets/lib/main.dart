@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/widgets/image_picker.dart';
-
-
-import 'package:flutter_widgets/widgets/tab_bar.dart';
-
-
+import 'package:flutter_widgets/widgets/location.dart';
 
 void main() {
   runApp(
@@ -23,7 +18,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.green,
       ),
-      home:  const ImagePickerWidget(),
+      home: const LocationWidget(),
     );
   }
 }
