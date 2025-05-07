@@ -42,8 +42,25 @@ dependencies:
   fluttertoast: ^8.2.12
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.6
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "asset/image/logo.png"
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#42a5f5"
+  image: "asset/image/logo.png"
+  android: true
+  ios: true
+
+
+
+flutter_test:
+  sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -66,6 +83,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - asset/image/picture.jpg
+    - asset/image/logo.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
